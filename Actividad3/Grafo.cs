@@ -88,9 +88,62 @@ namespace Actividad3
 
             return false;
         }
+
+        // Método para insertar aristas entre los nodos (gasolineras)
+        public bool InsertarArista(string origen, string destino, int peso)
+        {
+            // Si no existe ningun nodo se devuelve false
+            if(!ExisteNodo(origen) || !ExisteNodo(destino))
+            {
+                return false;
+            }
+
+            // Comprobar si ya existe la conexión
+            ListAdyacencia actual = listaAdyacencia[origen];
+            while (actual != null)
+            {
+                if (actual.Destino == destino) return false; // Ya existe
+                actual = actual.Siguiente;
+            }
+
+            // Crear nueva arista e insertarla al principio
+            ListAdyacencia nuevaConexion = new ListAdyacencia(destino, peso);
+            
+            // El siguiente del nuevo será el que antes era el primero
+            nuevaConexion.Siguiente = listaAdyacencia[origen];
+            
+            // Actualizamos la cabecera
+            listaAdyacencia[origen] = nuevaConexion;
+
+            return true;
+
+        }
+
+        public override string ToString()
+        {
+            string resultado = "";
+
+            foreach(var nodoKey in listaAdyacencia.Keys)
+            {
+                // Obtenemos el primer nodo de la lista enlazada
+                ListAdyacencia actual = listaAdyacencia[nodoKey];
+
+                while (actual != null)
+                {
+                    resultado += $" -> {actual.Destino} ({actual.Peso}km) ";
+                    actual = actual.Siguiente;
+                }
+
+                resultado += "\n";
+            }
+
+            return resultado;
+        }
+
+        public int NumeroNodos
+        {
+            get { return contador; }
+        }
     }
-
-    
-
     
 }
