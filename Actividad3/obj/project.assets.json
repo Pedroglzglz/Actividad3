@@ -8,26 +8,24 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\pegon\\.nuget\\packages\\": {}
+    "/home/juanjobn/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\pegon\\source\\repos\\Actividad3\\Actividad3\\Actividad3.csproj",
+      "projectUniqueName": "/home/juanjobn/Documentos/Actividad3_EDA/Actividad3/Actividad3/Actividad3.csproj",
       "projectName": "Actividad3",
-      "projectPath": "C:\\Users\\pegon\\source\\repos\\Actividad3\\Actividad3\\Actividad3.csproj",
-      "packagesPath": "C:\\Users\\pegon\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\pegon\\source\\repos\\Actividad3\\Actividad3\\obj\\",
+      "projectPath": "/home/juanjobn/Documentos/Actividad3_EDA/Actividad3/Actividad3/Actividad3.csproj",
+      "packagesPath": "/home/juanjobn/.nuget/packages/",
+      "outputPath": "/home/juanjobn/Documentos/Actividad3_EDA/Actividad3/Actividad3/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\pegon\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/juanjobn/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -45,8 +43,7 @@
         "enableAudit": "true",
         "auditLevel": "low",
         "auditMode": "direct"
-      },
-      "SdkAnalysisLevel": "9.0.300"
+      }
     },
     "frameworks": {
       "net8.0": {
@@ -67,7 +64,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.310/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/snap/dotnet-sdk/256/sdk/8.0.407/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
