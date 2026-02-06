@@ -11,6 +11,7 @@ namespace Actividad3
     {
         private NodoGrafo<string> nodo;
         private int contador;
+        private int contadorAristas;
         private Dictionary<string, ListAdyacencia> listaAdyacencia;
         private Dictionary<string, object> valoresNodos;
         public Grafo()
@@ -115,6 +116,8 @@ namespace Actividad3
             // Actualizamos la cabecera
             listaAdyacencia[origen] = nuevaConexion;
 
+            contadorAristas++;
+
             return true;
 
         }
@@ -128,6 +131,13 @@ namespace Actividad3
                 return false;
             }
 
+            bool borrado = EliminarDeListaAdyacencia(origen, destino); // Eliminar la conexión desde origen a destino
+            
+            if (borrado)
+            {
+                contadorAristas--; // Decrementamos el contador de aristas solo si se eliminó una conexión
+            }
+           
             return EliminarDeListaAdyacencia(origen, destino);
         }
 
@@ -154,6 +164,8 @@ namespace Actividad3
 
             foreach(var nodoKey in listaAdyacencia.Keys)
             {
+                resultado += $"Nodo: {nodoKey}";
+
                 // Obtenemos el primer nodo de la lista enlazada
                 ListAdyacencia actual = listaAdyacencia[nodoKey];
 
@@ -176,20 +188,7 @@ namespace Actividad3
 
         public int NumeroAristas
         {
-            get 
-            {
-                int total = 0;
-                foreach(var nodoKey in listaAdyacencia.Keys)
-                {
-                    ListAdyacencia actual = listaAdyacencia[nodoKey];
-                    while (actual != null)
-                    {
-                        total++;
-                        actual = actual.Siguiente;
-                    }
-                }
-                return total;
-            }
+            get { return contadorAristas; }
         }
     }
     

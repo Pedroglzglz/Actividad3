@@ -11,12 +11,12 @@
       "RelativeMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|solutionrelative:actividad3\\listadyacencia.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|c:\\users\\berbe\\onedrive\\escritorio\\unir\\tercer a\u00F1o\\estructura de datos y algoritmos\\actividad3\\actividad3\\gasolinera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|solutionrelative:actividad3\\gasolinera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|c:\\users\\berbe\\onedrive\\escritorio\\unir\\tercer a\u00F1o\\estructura de datos y algoritmos\\actividad3\\actividad3\\nodografo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|solutionrelative:actividad3\\nodografo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|c:\\users\\berbe\\onedrive\\escritorio\\unir\\tercer a\u00F1o\\estructura de datos y algoritmos\\actividad3\\actividad3\\gasolinera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1EB8255-13BC-4A59-BE85-D4BFCA0E9BA6}|Actividad3\\Actividad3.csproj|solutionrelative:actividad3\\gasolinera.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +30,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Gasolinera.cs",
               "DocumentMoniker": "C:\\Users\\berbe\\OneDrive\\Escritorio\\UNIR\\Tercer A\u00F1o\\Estructura de Datos y Algoritmos\\Actividad3\\Actividad3\\Gasolinera.cs",
               "RelativeDocumentMoniker": "Actividad3\\Gasolinera.cs",
@@ -38,8 +38,7 @@
               "RelativeToolTip": "Actividad3\\Gasolinera.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-06T14:43:03.276Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-02-06T14:43:03.276Z"
             },
             {
               "$type": "Document",
@@ -62,14 +61,14 @@
               "RelativeDocumentMoniker": "Actividad3\\Grafo.cs",
               "ToolTip": "C:\\Users\\berbe\\OneDrive\\Escritorio\\UNIR\\Tercer A\u00F1o\\Estructura de Datos y Algoritmos\\Actividad3\\Actividad3\\Grafo.cs",
               "RelativeToolTip": "Actividad3\\Grafo.cs",
-              "ViewState": "AgIAAIMAAAAAAAAAAAAqwMAAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAcwIkAAABqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-02-04T12:47:49.714Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "NodoGrafo.cs",
               "DocumentMoniker": "C:\\Users\\berbe\\OneDrive\\Escritorio\\UNIR\\Tercer A\u00F1o\\Estructura de Datos y Algoritmos\\Actividad3\\Actividad3\\NodoGrafo.cs",
               "RelativeDocumentMoniker": "Actividad3\\NodoGrafo.cs",
@@ -77,7 +76,8 @@
               "RelativeToolTip": "Actividad3\\NodoGrafo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-02-04T12:44:54.765Z"
+              "WhenOpened": "2026-02-04T12:44:54.765Z",
+              "EditorCaption": ""
             }
           ]
         }
