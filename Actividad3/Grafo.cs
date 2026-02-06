@@ -119,6 +119,35 @@ namespace Actividad3
 
         }
 
+        // Método para eliminar una arista entre dos nodos
+        public bool BorrarArista(string origen, string destino)
+        {
+            // Si no existe ningun nodo se devuelve false
+            if (!ExisteNodo(origen) || !ExisteNodo(destino))
+            {
+                return false;
+            }
+
+            return EliminarDeListaAdyacencia(origen, destino);
+        }
+
+        // Método para verificar si existe una arista entre dos nodos
+        public bool ExisteArista(string origen, string destino)
+        {
+            if (!ExisteNodo(origen) || !ExisteNodo(destino))
+            {
+                return false;
+            }
+
+            ListAdyacencia actual = listaAdyacencia[origen];
+            while (actual != null)
+            {
+                if (actual.Destino == destino) return true; // Existe la conexión
+                actual = actual.Siguiente;
+            }
+            return false; // No existe la conexión
+        }
+
         public override string ToString()
         {
             string resultado = "";
@@ -143,6 +172,24 @@ namespace Actividad3
         public int NumeroNodos
         {
             get { return contador; }
+        }
+
+        public int NumeroAristas
+        {
+            get 
+            {
+                int total = 0;
+                foreach(var nodoKey in listaAdyacencia.Keys)
+                {
+                    ListAdyacencia actual = listaAdyacencia[nodoKey];
+                    while (actual != null)
+                    {
+                        total++;
+                        actual = actual.Siguiente;
+                    }
+                }
+                return total;
+            }
         }
     }
     
