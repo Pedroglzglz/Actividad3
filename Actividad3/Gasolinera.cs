@@ -7,23 +7,21 @@ namespace Actividad3
         // Atributos propios de la Gasolinera
         public string Rotulo { get; private set; }
         public string Direccion { get; private set; }
-        public string Localidad { get; private set; }
-        public double Latitud { get; private set; }
-        public double Longitud { get; private set; }
+        public string Latitud { get; private set; }
+        public string Longitud { get; private set; }
 
-        public Gasolinera(string rotulo, string direccion, string localidad, double latitud, double longitud) 
-            : base(rotulo) 
+        public Gasolinera(string clave, string rotulo, string direccion, string localidad, string latitud, string longitud) 
+            : base(clave) 
         {
             this.Rotulo = rotulo;
             this.Direccion = direccion;
-            this.Localidad = localidad;
             this.Latitud = latitud;
             this.Longitud = longitud;
         }
 
         public override string ToString()
         {
-            return $"{Rotulo} - {Direccion} ({Localidad})";
+            return $"{Rotulo} - {Direccion}";
         }
     }
 }
